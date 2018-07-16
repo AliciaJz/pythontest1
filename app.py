@@ -20,8 +20,14 @@
 
 # summation(9, 9)
 
-def summation(num1, num2):
-  resultado=(num1+num2)
-  return resultado
+# def summation(num1, num2):
+#   resultado=(num1+num2)
+#   return resultado
 
-print(summation(5, 7.3))
+# print(summation(5, 7.3))
+my_list=["Lore", "Betty", "Alicia", "Virgin"]
+
+print(my_list[:])
+print(my_list[2])
+print(my_list[-1])
+print(my_list[0:2])
