@@ -11,11 +11,17 @@
 
 # message()
 
+# def summation(num1, num2):
+#   print(num1+num2)
+
+# summation(5, 7.3)
+
+# summation(7, 9)
+
+# summation(9, 9)
+
 def summation(num1, num2):
-  print(num1+num2)
+  resultado=(num1+num2)
+  return resultado
 
-summation(5, 7.3)
-
-summation(7, 9)
-
-summation(9, 9)
+print(summation(5, 7.3))
