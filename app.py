@@ -25,9 +25,20 @@
 #   return resultado
 
 # print(summation(5, 7.3))
+
 my_list=["Lore", "Betty", "Alicia", "Virgin"]
 
+my_list.append("Din")
+my_list.insert(2, "Din")
+my_list.extend(["Norma", "Silvia", "Raul"])
+
 print(my_list[:])
-print(my_list[2])
+print(my_list[0])
 print(my_list[-1])
 print(my_list[0:2])
+print(my_list[:2])
+print(my_list[2:])
+print(my_list.index("Alicia"))
+print("Norma" in my_list)
+print("Laura" in my_list)
+
