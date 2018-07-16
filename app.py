@@ -4,9 +4,18 @@
 #   print(a)
 
 
-def mensaje():
-  print("mensaje1")
-  print("mensaje2")
-  print("mensaje3")
+# def message():
+#   print("message1")
+#   print("message2")
+#   print("message3")
 
-mensaje()
+# message()
+
+def summation(num1, num2):
+  print(num1+num2)
+
+summation(5, 7.3)
+
+summation(7, 9)
+
+summation(9, 9)
