@@ -33,6 +33,9 @@ my_list.insert(2, "Din")
 my_list.extend(["Norma", "Silvia", "Raul"])
 
 print(my_list[:])
+my_list.pop()
+
+print(my_list[:])
 print(my_list[0])
 print(my_list[-1])
 print(my_list[0:2])
@@ -42,3 +45,13 @@ print(my_list.index("Alicia"))
 print("Norma" in my_list)
 print("Laura" in my_list)
 
+my_list.remove("Din")
+print(my_list[:])
+
+my_list_1=[5, True, 7.9]
+
+my_list_2=[5, True, 7.9] * 3
+print(my_list_2[:])
+
+all_lists=my_list+my_list_1
+print(all_lists[:])
