@@ -145,16 +145,28 @@
 # else:
 #   print("bu")
 
-print("Classes")
-print("Class: Class a - Class b - Class c")
-option=input("What class do you choose?: ")
+# print("Classes")
+# print("Class: Class a - Class b - Class c")
+# option=input("What class do you choose?: ")
 
-assign=option.lower()
+# assign=option.lower()
 
-if assign in ("class a", "class b", "class c"):
+# if assign in ("class a", "class b", "class c"):
 
-  print("You choose " + assign)
+#   print("You choose " + assign)
 
-else:
+# else:
 
-  print("That's not a class")
+#   print("That's not a class")
+
+for i in [1,2,3]:
+  print("Ali")
+
+for i in ["Sp" ,"gre" ,"asd"]:
+  print("Alicia")
+
+for i in ["Zero" ,"One" ,"Two", "Three"]:
+  print(i)
+
+for numbers in ["Zero" ,"One" ,"Two", "Three"]:
+  print(numbers)
