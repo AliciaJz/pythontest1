@@ -111,3 +111,16 @@
 # print(my_dictionary3.values())
 # print(len(my_dictionary3))
 
+print("Grading function")
+
+grade_student=input("Write your grade: ")
+
+def evaluation(grade):
+  value="pass"
+  if grade < 5:
+    value= "failed"
+  return value
+
+# print(evaluation(3))
+# print(evaluation(9))
+print(evaluation(int(grade_student)))
