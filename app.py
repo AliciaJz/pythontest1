@@ -202,15 +202,64 @@
 # for i in range(5,50, 3):
 #   print(f"index {i}")
 
-valid=False
-email=input("Enter your email: ") 
-for i in range(len(email)):
+# valid=False
+# email=input("Enter your email: ") 
+# for i in range(len(email)):
 
-  if email[i]=="@":
-    valid=True
+#   if email[i]=="@":
+#     valid=True
 
-if valid:
-  print("correct")
+# if valid:
+#   print("correct")
 
-else:
-  print("incorrect")
+# else:
+#   print("incorrect")
+
+
+# i=1
+
+# while i<=10:
+#   print("Number "+ str(i))
+#   i=i+1
+
+# print("While Done")
+
+# age=int(input("Enter your age: "))
+
+# while age<0:
+#   print("What??? are you a zombie?")
+#   edad=int(input("Enter your correct age: "))
+
+# print("OK")
+# print("You say you are " + str(age))
+
+# age=int(input("Enter your age: "))
+
+# while age<5 or age>100:
+#   print("What??? you are a baby o a really old person, go to bed")
+#   edad=int(input("Enter your correct age: "))
+
+# print("OK")
+# print("You say you are " + str(age))
+
+import math
+
+print("Square root")
+number=int(input("Your number: "))
+
+tries=0
+
+while number<0:
+  print("Wrong, that is a negative number")
+
+  if tries==2:
+    print("Run the program again, I'm tired")
+    break;
+
+  number=int(input("Your number: "))
+  if number<0:
+    tries=tries+1
+
+if tries<2:
+  solution=math.sqrt(number)
+  print("Square root of " + str(number) + " is " + str(solution))
