@@ -242,24 +242,48 @@
 # print("OK")
 # print("You say you are " + str(age))
 
-import math
+# import math
 
-print("Square root")
-number=int(input("Your number: "))
+# print("Square root")
+# number=int(input("Your number: "))
 
-tries=0
+# tries=0
 
-while number<0:
-  print("Wrong, that is a negative number")
+# while number<0:
+#   print("Wrong, that is a negative number")
 
-  if tries==2:
-    print("Run the program again, I'm tired")
-    break;
+#   if tries==2:
+#     print("Run the program again, I'm tired")
+#     break;
 
-  number=int(input("Your number: "))
-  if number<0:
-    tries=tries+1
+#   number=int(input("Your number: "))
+#   if number<0:
+#     tries=tries+1
 
-if tries<2:
-  solution=math.sqrt(number)
-  print("Square root of " + str(number) + " is " + str(solution))
+# if tries<2:
+#   solution=math.sqrt(number)
+#   print("Square root of " + str(number) + " is " + str(solution))
+
+# for letter in "Python":
+#   if letter=="h":
+#     continue
+#   print("Letter: " + letter)
+
+
+name="Alicia Juarez"
+counter=0
+
+for i in name:
+  counter+=1
+
+print(counter)
+
+name="Alicia Juarez"
+counter=0
+
+for i in name:
+  if i==" ":
+    continue
+  counter+=1
+
+print(counter)
