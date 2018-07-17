@@ -56,27 +56,58 @@
 # all_lists=my_list+my_list_1
 # print(all_lists[:])
 
-my_tuple=("Alicia", 13,7,79, "Alicia", "Alicia")
-print(my_tuple)
-my_list_tuple=list(my_tuple)
-print(my_list_tuple)
+# my_tuple=("Alicia", 13,7,79, "Alicia", "Alicia")
+# print(my_tuple)
+# my_list_tuple=list(my_tuple)
+# print(my_list_tuple)
 
-my_list_tuple1=["Alicia", 13,7,79]
-print(my_list_tuple1)
-my_tuple1=tuple(my_list_tuple1)
-print(my_tuple1)
+# my_list_tuple1=["Alicia", 13,7,79]
+# print(my_list_tuple1)
+# my_tuple1=tuple(my_list_tuple1)
+# print(my_tuple1)
 
-print("Alicia" in my_tuple)
+# print("Alicia" in my_tuple)
 
-print(my_tuple.count(13))
-print(my_tuple.count("Alicia"))
+# print(my_tuple.count(13))
+# print(my_tuple.count("Alicia"))
 
-print(len(my_tuple))
+# print(len(my_tuple))
 
-my_tuple=("Alicia", 13,7,79)
-name, day, month, year= my_tuple
+# my_tuple=("Alicia", 13,7,79)
+# name, day, month, year= my_tuple
 
-print(name)
-print(year)
-print(month)
-print(day)
+# print(name)
+# print(year)
+# print(month)
+# print(day)
+
+# my_dictionary={"Alemania":"Berlin", "Francia":"Paris", "UK":"London"}
+# print(my_dictionary)
+# my_dictionary["Italia"]="Mexico"
+# print(my_dictionary)
+# my_dictionary["Italia"]="Rome"
+# print(my_dictionary)
+# print(my_dictionary["Francia"])
+
+# del my_dictionary["UK"]
+# print(my_dictionary)
+
+# my_dictionary1={"Alemania":"Berlin", 3:"Paris", "UK":9}
+# print(my_dictionary1)
+
+# una_tuple=["Francia", "UK", "Mexico"]
+# print(una_tuple)
+# my_dictionary2={una_tuple[0]:"Paris", una_tuple[1]:"London", una_tuple[2]:"Mexico"}
+# print(my_dictionary2)
+
+# my_dictionary3={23:"Jordan", "Name":"Michael", "Team":"Chicago", "Wins":[1991, 1992, 1993, 1996, 1997, 1998]}
+# my_dictionary4={23:"Jordan", "Name":"Michael", "Team":"Chicago", "Wins":{"years":[1991, 1992, 1993, 1996, 1997, 1998]}}
+# print(my_dictionary3)
+# print(my_dictionary3["Team"])
+# print(my_dictionary3["Wins"])
+# print(my_dictionary4)
+# print(my_dictionary4["Wins"])
+# print(my_dictionary3.keys())
+# print(my_dictionary3.values())
+# print(len(my_dictionary3))
+
