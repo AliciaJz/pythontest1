@@ -111,16 +111,29 @@
 # print(my_dictionary3.values())
 # print(len(my_dictionary3))
 
-print("Grading function")
+# print("Grading function")
 
-grade_student=input("Write your grade: ")
+# grade_student=input("Write your grade: ")
 
-def evaluation(grade):
-  value="pass"
-  if grade < 5:
-    value= "failed"
-  return value
+# def evaluation(grade):
+#   value="pass"
+#   if grade < 5:
+#     value= "failed"
+#   return value
 
 # print(evaluation(3))
 # print(evaluation(9))
-print(evaluation(int(grade_student)))
+# print(evaluation(int(grade_student)))
+
+print("Can you enter here?")
+
+user_age=int(input("Enter your age: "))
+
+if user_age<18:
+  print("Come back in a few years...")
+elif user_age>99:
+  print("Yeah right...")
+else:
+  print("Please enter")
+
+print("Bye")
