@@ -189,6 +189,28 @@
 # else:
 #   print("That's not and email")
 
-for i in range(7):
-  print("A")
-  print(i)
+# for i in range(7):
+#   print("A")
+#   print(i)
+
+# for i in range(5):
+#   print(f"index {i}")
+
+# for i in range(7,13):
+#   print(f"index {i}")
+
+# for i in range(5,50, 3):
+#   print(f"index {i}")
+
+valid=False
+email=input("Enter your email: ") 
+for i in range(len(email)):
+
+  if email[i]=="@":
+    valid=True
+
+if valid:
+  print("correct")
+
+else:
+  print("incorrect")
