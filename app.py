@@ -125,15 +125,36 @@
 # print(evaluation(9))
 # print(evaluation(int(grade_student)))
 
-print("Can you enter here?")
+# print("Can you enter here?")
 
-user_age=int(input("Enter your age: "))
+# user_age=int(input("Enter your age: "))
 
-if user_age<18:
-  print("Come back in a few years...")
-elif user_age>99:
-  print("Yeah right...")
+# if user_age<18:
+#   print("Come back in a few years...")
+# elif user_age>99:
+#   print("Yeah right...")
+# else:
+#   print("Please enter")
+
+# print("Bye")
+
+# age=233
+
+# if 0<age<100:
+#   print("good")
+# else:
+#   print("bu")
+
+print("Classes")
+print("Class: Class a - Class b - Class c")
+option=input("What class do you choose?: ")
+
+assign=option.lower()
+
+if assign in ("class a", "class b", "class c"):
+
+  print("You choose " + assign)
+
 else:
-  print("Please enter")
 
-print("Bye")
+  print("That's not a class")
