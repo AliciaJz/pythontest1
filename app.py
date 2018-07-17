@@ -270,20 +270,27 @@
 #   print("Letter: " + letter)
 
 
-name="Alicia Juarez"
-counter=0
+# name="Alicia Juarez"
+# counter=0
 
-for i in name:
-  counter+=1
+# for i in name:
+#   counter+=1
 
-print(counter)
+# print(counter)
 
-name="Alicia Juarez"
-counter=0
+# name="Alicia Juarez"
+# counter=0
 
-for i in name:
-  if i==" ":
-    continue
-  counter+=1
+# for i in name:
+#   if i==" ":
+#     continue
+#   counter+=1
 
-print(counter)
+# print(counter)
+
+while True:
+  pass
+
+class my_class:
+  pass
+
