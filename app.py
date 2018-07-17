@@ -159,14 +159,36 @@
 
 #   print("That's not a class")
 
-for i in [1,2,3]:
-  print("Ali")
+# for i in [1,2,3]:
+#   print("Ali")
 
-for i in ["Sp" ,"gre" ,"asd"]:
-  print("Alicia")
+# for i in ["Sp" ,"gre" ,"asd"]:
+#   print("Alicia")
 
-for i in ["Zero" ,"One" ,"Two", "Three"]:
+# for i in ["Zero" ,"One" ,"Two", "Three"]:
+#   print(i)
+
+# for numbers in ["Zero" ,"One" ,"Two", "Three"]:
+#   print(numbers)
+
+# for numbers in ["Zero" ,"One" ,"Two", 3]:
+#   print(numbers, end=" ")
+
+# for i in "Alicia":
+  # print("Zi")
+  # print("Zi", end="")
+
+# counter=0
+# my_email=input("Write your email: ")
+# for i in my_email:
+#   if(i=="@" or i=="."):
+#     counter=counter+1
+
+# if counter==2:
+#   print("Correct email")
+# else:
+#   print("That's not and email")
+
+for i in range(7):
+  print("A")
   print(i)
-
-for numbers in ["Zero" ,"One" ,"Two", "Three"]:
-  print(numbers)
