@@ -288,9 +288,23 @@
 
 # print(counter)
 
-while True:
-  pass
+# while True:
+#   pass
 
-class my_class:
-  pass
+# class my_class:
+#   pass
 
+email=input("Enter your email: ")
+
+for i in email:
+
+  if i=="@":
+
+    at=True
+    break;
+
+else:
+
+  at=False
+
+print(at)
