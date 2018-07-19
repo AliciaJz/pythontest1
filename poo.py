@@ -4,21 +4,23 @@ class Car():
   wheels=4
   running=False
 
-  def start(self):
-    self.running=True
+  def start(self, run):
+    self.running=run
 
-  def state(self):
     if(self.running):
       return "Car running"
     else:
       return "Car stopped"
 
+  def state(self):
+    print("Car has", my_car.wheels, "wheels, a width of ", self.widChassis, "and length of", self.lenChassis)
+
 my_car=Car()
 
 print("Car length: ", my_car.lenChassis)
 print("Has", my_car.wheels, "wheels")
-my_car.start()
-print(my_car.state())
+print(my_car.start(True))
+my_car.state()
 
 
 print("--------Second car--------")
@@ -26,5 +28,6 @@ print("--------Second car--------")
 my_car2=Car()
 print("Car length: ", my_car2.lenChassis)
 print("Has", my_car2.wheels, "wheels")
-print(my_car2.state())
+print(my_car2.start(False))
+my_car2.state()
 
