@@ -378,31 +378,125 @@
 # print(next(ret_cities))
 
 
-def summation(num1, num2):
-  return num1+num2
-def rest(num1, num2):
-  return num1-num2
-def multiplication(num1, num2):
-  return num1*num2
-def division(num1, num2):
+# def summation(num1, num2):
+#   return num1+num2
+# def rest(num1, num2):
+#   return num1-num2
+# def multiplication(num1, num2):
+#   return num1*num2
+# def division(num1, num2):
+#   try:
+#     return num1/num2
+#   except ZeroDivisionError:
+#     print("Can't do that")
+#     return "Wrong operation"
+
+# op1=(int(input("Enter first number: ")))
+# op2=(int(input("Enter first number: ")))
+
+# operation=input("What operation you want to do(summation, rest, multiplication, division): ")
+
+# if operation=="summation":
+#   print(summation(op1, op2))
+# elif operation=="rest":
+#   print(rest(op1, op2))
+# elif operation=="multiplication":
+#   print(multiplication(op1, op2))
+# elif operation=="division":
+#   print(division(op1, op2))
+# else:
+#   print("what?")
+
+
+# def summation(num1, num2):
+#   return num1+num2
+# def rest(num1, num2):
+#   return num1-num2
+# def multiplication(num1, num2):
+#   return num1*num2
+# def division(num1, num2):
+#   try:
+#     return num1/num2
+#   except ZeroDivisionError:
+#     print("Can't do that")
+#     return "Wrong operation"
+
+# while True:
+#   try:
+#     op1=(int(input("Enter first number: ")))
+#     op2=(int(input("Enter first number: ")))
+#     break
+#   except ValueError:
+#     print("Numbers not letters... try again")
+
+# operation=input("What operation you want to do(summation, rest, multiplication, division): ")
+
+# if operation=="summation":
+#   print(summation(op1, op2))
+# elif operation=="rest":
+#   print(rest(op1, op2))
+# elif operation=="multiplication":
+#   print(multiplication(op1, op2))
+# elif operation=="division":
+#   print(division(op1, op2))
+# else:
+#   print("what?")
+
+# def division():
+#   op1=(float(input("Enter first number: ")))
+#   op2=(float(input("Enter second number: ")))
+
+#   print("Result: " + str(op1/op2))
+
+#   print("done")
+
+# division()
+
+# def division():
+#   try:
+
+#     op1=(float(input("Enter first number: ")))
+#     op2=(float(input("Enter second number: ")))
+
+#     print("Result: " + str(op1/op2))
+
+#   except:
+#     print("Wrong")
+
+#   print("Done")
+
+# division()
+
+# def division():
+#   try:
+
+#     op1=(float(input("Enter first number: ")))
+#     op2=(float(input("Enter second number: ")))
+
+#     print("Result: " + str(op1/op2))
+
+#   except ValueError:
+#     print("Wrong")
+
+#   except ZeroDivisionError:
+#     print("Can't do that")
+
+#   finally:
+#     print("Done")
+
+# division()
+
+def division():
   try:
-    return num1/num2
-  except ZeroDivisionError:
-    print("Can't do that")
-    return "Wrong operation"
 
-op1=(int(input("Enter first number: ")))
-op2=(int(input("Enter first number: ")))
+    op1=(float(input("Enter first number: ")))
+    op2=(float(input("Enter second number: ")))
 
-operation=input("What operation you want to do(summation, rest, multiplication, division): ")
+    print("Result: " + str(op1/op2))
 
-if operation=="summation":
-  print(summation(op1, op2))
-elif operation=="rest":
-  print(rest(op1, op2))
-elif operation=="multiplication":
-  print(multiplication(op1, op2))
-elif operation=="division":
-  print(division(op1, op2))
-else:
-  print("what?")
+  finally:
+    print("Done")
+
+division()
+
+
