@@ -294,17 +294,85 @@
 # class my_class:
 #   pass
 
-email=input("Enter your email: ")
+# email=input("Enter your email: ")
 
-for i in email:
+# for i in email:
 
-  if i=="@":
+#   if i=="@":
 
-    at=True
-    break;
+#     at=True
+#     break;
 
-else:
+# else:
 
-  at=False
+#   at=False
 
-print(at)
+# print(at)
+
+def gen_even(limit):
+  num=1
+
+  my_list_3=[]
+
+  while num<limit:
+    my_list_3.append(num*2)
+    num+=1
+
+  return my_list_3
+
+print(gen_even(10))
+
+
+def gen_even(limit):
+  num=1
+
+  while num<limit:
+    yield num*2
+    num+=1
+
+ret_even=gen_even(10)
+
+for i in ret_even:
+
+  print(i)
+  
+def gen_even(limit):
+  num=1
+
+  while num<limit:
+    yield num*2
+    num+=1
+
+ret_even=gen_even(10)
+
+print(next(ret_even))
+print("more code...")
+print(next(ret_even))
+print("more code...")
+print(next(ret_even))
+
+
+def ret_cities(*cities):
+  for elem in cities:
+    yield elem
+
+ret_cities=ret_cities("Alberta", "Calgary", "Montreal", "Vancouver")
+print(next(ret_cities))
+print(next(ret_cities))
+
+def ret_cities(*cities):
+  for elem in cities:
+    for subElem in elem:
+      yield subElem
+
+ret_cities=ret_cities("Alberta", "Calgary", "Montreal", "Vancouver")
+print(next(ret_cities))
+print(next(ret_cities))
+
+def ret_cities(*cities):
+  for elem in cities:
+    yield from elem
+
+ret_cities=ret_cities("Alberta", "Calgary", "Montreal", "Vancouver")
+print(next(ret_cities))
+print(next(ret_cities))
