@@ -486,17 +486,48 @@
 
 # division()
 
-def division():
-  try:
+# def division():
+#   try:
 
-    op1=(float(input("Enter first number: ")))
-    op2=(float(input("Enter second number: ")))
+#     op1=(float(input("Enter first number: ")))
+#     op2=(float(input("Enter second number: ")))
 
-    print("Result: " + str(op1/op2))
+#     print("Result: " + str(op1/op2))
 
-  finally:
-    print("Done")
+#   finally:
+#     print("Done")
 
-division()
+# division()
 
+# def eval_age(age):
+#   if age<0:
+#     raise TypeError("Can't be less than 0")
+#   elif age<20:
+#     print("You are young")
+#   elif age<40:
+#     print("AWESOME!")
+#   elif age<70:
+#     print("Great")
+#   elif age<100:
+#     print("Take care...")
 
+# print(eval_age(4))
+
+import math
+
+def calculate_square(num1):
+  if num1<0:
+    raise ValueError ("Number can't be below 0")
+
+  else:
+    return math.sqrt(num1)
+
+op1=(int(input("Number 1: ")))
+
+try:
+  print(calculate_square(op1))
+
+except ValueError as NegativeNumberError:
+  print(NegativeNumberError)
+
+print("Done")
