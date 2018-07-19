@@ -309,70 +309,100 @@
 
 # print(at)
 
-def gen_even(limit):
-  num=1
+# def gen_even(limit):
+#   num=1
 
-  my_list_3=[]
+#   my_list_3=[]
 
-  while num<limit:
-    my_list_3.append(num*2)
-    num+=1
+#   while num<limit:
+#     my_list_3.append(num*2)
+#     num+=1
 
-  return my_list_3
+#   return my_list_3
 
-print(gen_even(10))
+# print(gen_even(10))
 
 
-def gen_even(limit):
-  num=1
+# def gen_even(limit):
+#   num=1
 
-  while num<limit:
-    yield num*2
-    num+=1
+#   while num<limit:
+#     yield num*2
+#     num+=1
 
-ret_even=gen_even(10)
+# ret_even=gen_even(10)
 
-for i in ret_even:
+# for i in ret_even:
 
-  print(i)
+#   print(i)
   
-def gen_even(limit):
-  num=1
+# def gen_even(limit):
+#   num=1
 
-  while num<limit:
-    yield num*2
-    num+=1
+#   while num<limit:
+#     yield num*2
+#     num+=1
 
-ret_even=gen_even(10)
+# ret_even=gen_even(10)
 
-print(next(ret_even))
-print("more code...")
-print(next(ret_even))
-print("more code...")
-print(next(ret_even))
+# print(next(ret_even))
+# print("more code...")
+# print(next(ret_even))
+# print("more code...")
+# print(next(ret_even))
 
 
-def ret_cities(*cities):
-  for elem in cities:
-    yield elem
+# def ret_cities(*cities):
+#   for elem in cities:
+#     yield elem
 
-ret_cities=ret_cities("Alberta", "Calgary", "Montreal", "Vancouver")
-print(next(ret_cities))
-print(next(ret_cities))
+# ret_cities=ret_cities("Alberta", "Calgary", "Montreal", "Vancouver")
+# print(next(ret_cities))
+# print(next(ret_cities))
 
-def ret_cities(*cities):
-  for elem in cities:
-    for subElem in elem:
-      yield subElem
+# def ret_cities(*cities):
+#   for elem in cities:
+#     for subElem in elem:
+#       yield subElem
 
-ret_cities=ret_cities("Alberta", "Calgary", "Montreal", "Vancouver")
-print(next(ret_cities))
-print(next(ret_cities))
+# ret_cities=ret_cities("Alberta", "Calgary", "Montreal", "Vancouver")
+# print(next(ret_cities))
+# print(next(ret_cities))
 
-def ret_cities(*cities):
-  for elem in cities:
-    yield from elem
+# def ret_cities(*cities):
+#   for elem in cities:
+#     yield from elem
 
-ret_cities=ret_cities("Alberta", "Calgary", "Montreal", "Vancouver")
-print(next(ret_cities))
-print(next(ret_cities))
+# ret_cities=ret_cities("Alberta", "Calgary", "Montreal", "Vancouver")
+# print(next(ret_cities))
+# print(next(ret_cities))
+
+
+def summation(num1, num2):
+  return num1+num2
+def rest(num1, num2):
+  return num1-num2
+def multiplication(num1, num2):
+  return num1*num2
+def division(num1, num2):
+  try:
+    return num1/num2
+  except ZeroDivisionError:
+    print("Can't do that")
+    return "Wrong operation"
+
+op1=(int(input("Enter first number: ")))
+op2=(int(input("Enter first number: ")))
+
+operation=input("What operation you want to do(summation, rest, multiplication, division): ")
+
+if operation=="summation":
+  print(summation(op1, op2))
+elif operation=="rest":
+  print(rest(op1, op2))
+elif operation=="multiplication":
+  print(multiplication(op1, op2))
+elif operation=="division":
+  print(division(op1, op2))
+else:
+  print("what?")
