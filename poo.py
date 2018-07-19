@@ -1,8 +1,11 @@
 class Car():
-  lenChassis=250
-  widChassis=120
-  wheels=4
-  running=False
+
+  def __init__(self):
+
+    self.lenChassis=250
+    self.widChassis=120
+    self.wheels=4
+    self.running=False
 
   def start(self, run):
     self.running=run
