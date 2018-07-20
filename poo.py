@@ -11,27 +11,45 @@ class Car():
     self.__running=run
 
     if(self.__running):
+      check=self.__checking()
+
+    if(self.__running and check):
       return "Car running"
+
+    elif(self.__running and check==False):
+      return "Something is wrong, can't run car"
+
     else:
       return "Car stopped"
 
   def state(self):
     print("Car has", self.__wheels, "wheels, a width of", self.__widChassis, "and length of", self.__lenChassis)
 
+  def __checking(self):
+    print("Checking car")
+
+    self.gas="ok"
+    self.oil="ok"
+    self.doors="closed"
+
+    if(self.gas=="ok" and self.oil=="ok" and self.doors=="closed"):
+      return True
+    
+    else:
+      return False
+
+
 my_car=Car()
 
-# print("Car length: ", my_car.__lenChassis)
-# print("Has", my_car.__wheels, "wheels")
 print(my_car.start(True))
-my_car.state()
 
+my_car.state()
 
 print("--------Second car--------")
 
 my_car2=Car()
-# print("Car length: ", my_car2.lenChassis)
-# print("Has", my_car2.wheels, "wheels")
+
 print(my_car2.start(False))
-my_car2.wheels=5
+
 my_car2.state()
 
