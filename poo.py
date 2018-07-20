@@ -73,9 +73,43 @@ class Vehicles():
   def state(self):
     print("Brand: ", self.brand, "\nModel: ", self.model, "\nRunning: ", self.running, "\nAccelerating: ", self.accelerating, "\nStoping: ", self.stoping,)
 
+class Minivan(Vehicles):
+  def carry(self, carry):
+    self.carried=carry
+    if(self.carried):
+      return "Minivan is carring something"
+    else:
+      return "Minivan is carring nothing"
+
 class Motorcycle(Vehicles):
-  pass
+  front_wheel=""
+  def horsey(self):
+    self.front_wheel="Running using only one wheel"
+
+  def state(self):
+    print("Brand: ", self.brand, "\nModel: ", self.model, "\nRunning: ", self.running, "\nAccelerating: ", self.accelerating, "\nStoping: ", self.stoping, "\nSpecial method: ", self.front_wheel)
+
+class Electric_vehicles():
+  def __init__(self):
+    self.autonomy=100
+
+  def charge_battery(self):
+    self.charging=True
 
 my_motorcycle1=Motorcycle("Lou's", "bike")
 
+my_motorcycle1.horsey()
+
 my_motorcycle1.state()
+
+
+my_minivan1=Minivan("Deb's", "van")
+
+my_minivan1.start_car()
+my_minivan1.state()
+print(my_minivan1.carry(True))
+
+class Electric_bike(Electric_vehicles, Vehicles):
+  pass
+
+my_electricbike1=Electric_bike()
